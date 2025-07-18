@@ -1,36 +1,39 @@
 package union_find;
 
 public class UnionFind {
-    private int[] parent;  // array to store the parent of each element
-
+    private int[] parent;
+    private int[] rank; // to store the depth/size of each tree
 
     public UnionFind(int size) {
         parent = new int[size];
+        rank = new int[size];  // initially all ranks are 0
         for (int i = 0; i < size; i++) {
-            parent[i] = i;  //  each element is in its own set at first
+            parent[i] = i;
         }
     }
 
     public int find(int i) {
-        // if the element is its own parent, it is the root
-        if (parent[i] == i) {
-            return i;
+        if (parent[i] != i) {
+            // path compression
+            parent[i] = find(parent[i]);
         }
-        // recursively find the representative of the parent
-        return find(parent[i]);
+        return parent[i];
     }
-
 
     public void unite(int i, int j) {
-        int iRep = find(i); // find representative of i's set
-        int jRep = find(j); // find representative of j's set
+        int iRep = find(i);
+        int jRep = find(j);
 
-        // merge the two sets by pointing i's root to j's root
-        if (iRep != jRep) {
+        if (iRep == jRep) return;
+
+        // union by rank
+        if (rank[iRep] < rank[jRep]) {
             parent[iRep] = jRep;
+        } else if (rank[iRep] > rank[jRep]) {
+            parent[jRep] = iRep;
+        } else {
+            parent[jRep] = iRep;
+            rank[iRep]++;
         }
     }
-
-
 }
-
