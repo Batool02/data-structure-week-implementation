@@ -70,7 +70,7 @@ public class Dynamic {
         }
         array = newArray;// Replace old array with new array
     }
-// in the main  i test the methods to ensure if they work
+// in the main i test the methods to ensure if they work
     public static void main(String[] args) {
         Dynamic myArray = new Dynamic();
         myArray.add(5);
