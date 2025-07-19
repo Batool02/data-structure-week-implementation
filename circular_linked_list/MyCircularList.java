@@ -89,6 +89,7 @@ public class MyCircularList {
 
         System.out.println("(back to " + first.data + ")");
     }
+
     //return the total number of nodes in the list
 
     public int totalNodesCount() {

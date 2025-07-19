@@ -43,42 +43,52 @@ Represents vertices and their edges using adjacency lists, modeling connections 
 
 ## Time and Space Complexity Summary
 
-| Data Structure          | Method             | Time Complexity      | Space Complexity |
-|------------------------|--------------------|----------------------|------------------|
-| Dynamic Array          | add(), get(), set() | O(1) avg / O(n) worst| O(n)             |
-| Singly Linked List     | search(), addFirst()| O(n), O(1)           | O(n)             |
-| Stack (Array & Linked) | push(), pop(), peek()| O(1)                | O(n)             |
-| Doubly Linked List     | addFirst(), search()| O(1), O(n)           | O(n)             |
-| Circular Linked List   | addFirst(), search()| O(1), O(n)           | O(n)             |
-| Queue                  | enqueue(), dequeue()| O(1)                 | O(n)             |
-| Binary Search Tree     | addValue(), search()| O(h)                 | O(h)             |
-| Tree Traversals        | inorder, preorder   | O(n)                 | O(h)             |
-| Hash Table             | addValue(), search()| O(1) avg / O(n) worst| O(n)             |
-| Min Heap               | addValue(), search()| O(log n), O(n)       | O(n)             |
-| Graph (Adjacency List) | addValue(), search()| O(1), O(V+E)         | O(V + E)         |
 
-*Where:*  
-- *n* = number of elements/nodes  
-- *h* = height of the tree  
-- *V* = number of vertices  
-- *E* = number of edges  
+# Usage Examples
 
-## Usage Examples
+### Singly Linked List:
+Real-time chat message buffering.
 
-- **Dynamic Array:** Shopping cart where items can be added/removed dynamically.  
-- **Singly Linked List:** Streaming music playlists.  
-- **Doubly Linked List:** Undo/redo functionality in editors.  
-- **Circular Linked List:** Media players buffering in loops.  
-- **Stack:** UI navigation in games.  
-- **Queue:** Message processing systems.  
-- **Binary Tree:** File system organization.  
-- **Binary Search Tree:** Autocomplete in search bars.  
-- **Tree Traversals:** Generating sorted contact lists or evaluating expressions.  
-- **Hash Table:** Fast user profile lookup in social apps.  
-- **Min Heap:** Task prioritization in to-do apps.  
-- **Graph:** Social network modeling.
+### Doubly Linked List:
+Browser history navigation (forward/back).
+
+### Circular Linked List:
+Multiplayer game turns rotation.
+
+### Stack:
+Expression evaluation (calculators, compilers).
+
+### Queue: 
+Print job scheduling.
+
+### Binary Tree: 
+Decision trees in AI.
+
+### Binary Search Tree:
+Efficient database indexing.
+
+### Tree Traversals:
+XML/JSON data processing.
+
+### Hash Table:
+Caching results in web servers.
+
+### Min Heap:
+Event-driven simulation scheduling.
+
+### Graph:
+Route planning in GPS/navigation apps.
+
+### Trie:
+Spell checkers and IP routing tables.
+
+### Union Find (Disjoint Set):
+Network connectivity detection 
+
+
 
 ## How to Run Tests
 
 1. Clone the repository:
 https://github.com/Batool02/data-structure-week-implementation
+2. Run the code
