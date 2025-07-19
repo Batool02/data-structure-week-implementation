@@ -206,7 +206,7 @@ Represents vertices and their edges using adjacency lists, modeling connections 
 
 
 
-### Usage Examples
+# Usage Examples
 
 ## Singly Linked List:
 Real-time chat message buffering.
