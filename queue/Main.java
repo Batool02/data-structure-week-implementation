@@ -1,6 +1,6 @@
 package queue;
 
-
+//Test the methods
 public class Main {
     public static void main(String[] args) {
         System.out.println(" Queue using Array");
@@ -12,7 +12,7 @@ public class Main {
 
         System.out.println("Removed: " + arrayQueue.pop());
 
-        System.out.println("Peek: " + arrayQueue.peekFront());
+        System.out.println("Peek: " + arrayQueue.peekHead());
         System.out.println("Contains 2: " + arrayQueue.includes(2));
         System.out.println("Remove 2: " + arrayQueue.removeValue(2));
 
@@ -29,7 +29,7 @@ public class Main {
 
 
         System.out.println("Removed: " + linkedQueue.pop());
-        System.out.println("Peek: " + linkedQueue.peekFront());
+        System.out.println("Peek: " + linkedQueue.peekHead());
 
         System.out.println("Contains 20: " + linkedQueue.includes(20));
 
